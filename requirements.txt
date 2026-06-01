@@ -4,3 +4,4 @@ requests
 matplotlib
 seaborn
 statsmodels
+scikit-learn
