@@ -43,7 +43,7 @@ from sklearn.metrics import r2_score, mean_squared_error
 pd.set_option("display.max_columns", 30)
 pd.set_option("display.float_format", "{:,.2f}".format)
 
-OUTPUT_DIR = "data"
+OUTPUT_DIR = "data/raw"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 TARGET_YEAR = "2017-18"
