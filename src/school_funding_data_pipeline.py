@@ -394,8 +394,8 @@ for f in features:
 # ═══════════════════════════════════════════════════════════════
 
 print("\nStep 7 — Exporting final merged dataset...\n")
-
-OUTPUT_CSV = os.path.join(OUTPUT_DIR, f"school_funding_merged_{TARGET_YEAR.replace('-','_')}.csv")
+EXPORT_DIR = "data/processed"
+OUTPUT_CSV = os.path.join(EXPORT_DIR, f"school_funding_merged_{TARGET_YEAR.replace('-','_')}.csv")
 df.to_csv(OUTPUT_CSV, index=False)
 print(f"  ✓ Saved to: {OUTPUT_CSV}")
 print(f"  Final dataset: {df.shape[0]:,} districts × {df.shape[1]} columns\n")
